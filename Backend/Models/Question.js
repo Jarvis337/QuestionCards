@@ -1,26 +1,3 @@
-// // File: ../Models/Question.js
-
-// const mongoose = require('mongoose');
-// const Schema = mongoose.Schema;
-
-// let Question = new Schema({
-//   // The structure to match your single document
-//   technologies: [{
-//     name: String,
-//     questions: [{
-//       id: Number,
-//       question: String,
-//       answer: String
-//     }]
-//   }]
-// }, {
-//   collection: 'technology'
-// });
-
-// module.exports = mongoose.model('Question', Question);
-
-
-// File: ../Models/Question.js
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
