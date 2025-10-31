@@ -1,0 +1,62 @@
+Step 1 : Add data to mongoDb. There are two collections in questionDb database 
+         1) credentialdbs --> All registered user data is stored here
+         2) technology --> Different Tech data Q and A are stored here in single object.
+
+Step 2: Connect the database 
+
+Step 3: install all node modules using npm install command in both frontend and backend
+
+Step 4: Start the backend server using command node app.js
+
+Step 5: Start the FrontEnd using ng serve command.
+
+Step 6: Open webpage using link or manually writing it on any browser.
+
+Step 7: Register user with valid email id and password and confirm password.
+
+Step 8: Registered data is stored in mongoDb with hashed password.
+
+Step 9: Login with credentials 
+
+Step 10: Select the Question cards you want options available like Angular, Android etc
+
+Step 11: Logout after use.
+
+
+# Quiz Application
+
+## Setup
+
+### 1. Database
+Create MongoDB database `questionDb` with two collections:
+- **credentialdbs** - User registration data (hashed passwords)
+- **technology** - Quiz questions and answers by tech category
+
+### 2. Backend
+```bash
+cd backend
+npm install
+node app.js
+```
+Server runs on `http://localhost:3000`
+
+### 3. Frontend
+```bash
+cd frontend
+npm install
+ng serve
+```
+Access app at `http://localhost:4200`
+
+## Usage
+
+1. **Register** - Sign up with email and password
+2. **Login** - Enter your credentials
+3. **Select Category** - Choose Angular, Android, etc.
+4. **Answer Questions** - Complete the quiz
+5. **Logout** - End your session
+
+## Tech Stack
+- Frontend: Angular, TypeScript
+- Backend: Node.js, Express
+- Database: MongoDB

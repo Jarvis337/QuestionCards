@@ -1,0 +1,72 @@
+<div class="register-container">
+  <div class="register-card">
+    <h2>Create Account</h2>
+    
+    <!-- Error Message -->
+    <div *ngIf="error" class="alert alert-error">
+      {{ error }}
+    </div>
+
+    <!-- Success Message -->
+    <div *ngIf="success" class="alert alert-success">
+      {{ success }}
+    </div>
+
+    <!-- Registration Form -->
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          [disabled]="loading"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="At least 6 characters"
+          required
+          [disabled]="loading"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          [(ngModel)]="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm your password"
+          required
+          [disabled]="loading"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="btn-register"
+        [disabled]="loading"
+      >
+        {{ loading ? 'Registering...' : 'Register' }}
+      </button>
+    </form>
+
+    <!-- Login Link -->
+    <p class="login-link">
+      Already have an account?
+      <a routerLink="/auth/login">Login here</a>
+    </p>
+  </div>
+</div>

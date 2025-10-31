@@ -1,0 +1,282 @@
+[{
+  "_id": {
+    "$oid": "6900ac094ca66a07710ff1ab"
+  },
+  "technologies": [
+    {
+      "name": "Java",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Java and what are its main features?",
+          "answer": "Java is a general-purpose, class-based, object-oriented programming language. Main features: Platform Independence (WORA), Object-Oriented, Secure, Multi-threaded, Robust, Architecture-neutral, Portable, and Interpreted."
+        },
+        {
+          "id": 2,
+          "question": "Explain Object-Oriented Programming (OOP) in Java.",
+          "answer": "OOP is a programming paradigm based on objects and classes. It focuses on encapsulation, inheritance, polymorphism, and abstraction. Objects are instances of classes. OOP promotes code reusability and maintainability."
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between JDK, JRE, and JVM?",
+          "answer": "JVM is an abstract machine that runs Java programs. JRE includes JVM and libraries. JDK includes JRE, compiler, debugger, and development tools."
+        },
+        {
+          "id": 4,
+          "question": "What is the difference between abstract class and interface?",
+          "answer": "Abstract Class: can have concrete methods, constructors, instance variables. Interface: only abstract methods, no constructors, public members. A class can implement multiple interfaces but extend only one class."
+        },
+        {
+          "id": 5,
+          "question": "What is method overloading and overriding?",
+          "answer": "Overloading: same method name with different parameters in same class (compile-time polymorphism). Overriding: subclass provides implementation of superclass method (runtime polymorphism)."
+        },
+        {
+          "id": 6,
+          "question": "Explain inheritance in Java.",
+          "answer": "Inheritance allows a class to acquire properties of another class. Uses 'extends' keyword. Parent/superclass provides base functionality. Child/subclass inherits and extends functionality. Java doesn't support multiple inheritance."
+        },
+        {
+          "id": 7,
+          "question": "What is the difference between checked and unchecked exceptions?",
+          "answer": "Checked: checked at compile time, must be caught or declared (IOException, SQLException). Unchecked: occur at runtime, don't need declaration (NullPointerException, ArithmeticException)."
+        },
+        {
+          "id": 8,
+          "question": "Difference between String, StringBuilder, StringBuffer?",
+          "answer": "String: immutable, thread-safe, slower. StringBuilder: mutable, not thread-safe, faster. StringBuffer: mutable, thread-safe, slower than StringBuilder."
+        },
+        {
+          "id": 9,
+          "question": "What is garbage collection in Java?",
+          "answer": "Automatic memory management that removes unused objects. Developers don't explicitly delete objects. Common GCs: Serial, Parallel, CMS, G1. Triggered by System.gc() but not guaranteed."
+        },
+        {
+          "id": 10,
+          "question": "What are SOLID principles?",
+          "answer": "S-Single Responsibility, O-Open/Closed, L-Liskov Substitution, I-Interface Segregation, D-Dependency Inversion. These principles improve code quality and maintainability."
+        }
+      ]
+    },
+    {
+      "name": "Angular",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Angular and what are its main features?",
+          "answer": "Angular is a TypeScript-based open-source framework for building dynamic web applications. Features: two-way data binding, MVC architecture, dependency injection, services, directives, pipes, and component-based architecture."
+        },
+        {
+          "id": 2,
+          "question": "Explain two-way data binding in Angular.",
+          "answer": "Two-way data binding means changes in model automatically update the view and vice versa. Uses [(ngModel)] syntax. When user changes input, model updates, and when model changes, view updates automatically."
+        },
+        {
+          "id": 3,
+          "question": "What are directives in Angular?",
+          "answer": "Directives are markers on DOM elements that tell Angular to attach behavior or transform DOM. Types: Structural (*ngIf, *ngFor, *ngSwitch), Attribute (ngClass, ngStyle, ngModel), and Component directives."
+        },
+        {
+          "id": 4,
+          "question": "What is dependency injection in Angular?",
+          "answer": "Dependency Injection is a design pattern that deals with how components get hold of their dependencies. Angular injector subsystem provides services to components. Uses @Injectable() decorator and providers array in NgModule."
+        },
+        {
+          "id": 5,
+          "question": "What is the difference between component and directive?",
+          "answer": "Component: has template, has styles, has logic, represents a view with controller. Directive: no template (usually), adds behavior to existing elements, reusable across components. Every component is a directive."
+        },
+        {
+          "id": 6,
+          "question": "Explain services in Angular.",
+          "answer": "Services are singleton objects that provide functionality to components. Created using @Injectable() decorator. Shared across components. Handle business logic, data sharing, API calls. Injected via constructor."
+        },
+        {
+          "id": 7,
+          "question": "What are observables in Angular?",
+          "answer": "Observables are lazy event emitters that can emit multiple values over time. Part of RxJS library. Used for async operations like HTTP requests. Subscribe to observables to get values. Support operators like map, filter, reduce."
+        },
+        {
+          "id": 8,
+          "question": "What is NgModule in Angular?",
+          "answer": "NgModule is a class decorated with @NgModule that groups related components, directives, pipes, and services. Every Angular app has at least one NgModule (AppModule). Declarations, imports, providers are configured in NgModule."
+        },
+        {
+          "id": 9,
+          "question": "What is routing in Angular?",
+          "answer": "Routing enables navigation among different components/views in single page application. Uses RouterModule and Routes. Router service provides methods like navigate(). Router outlet displays component based on current route."
+        },
+        {
+          "id": 10,
+          "question": "What is the difference between ngOnInit and constructor?",
+          "answer": "Constructor: called when class is instantiated, used for initialization. ngOnInit: lifecycle hook called after component is initialized, used for setup logic. ngOnInit runs after constructor."
+        }
+      ]
+    },
+    {
+      "name": "Android",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Android and what are its main features?",
+          "answer": "Android is an open-source operating system for mobile devices. Features: Linux-based, app sandboxing, rich UI framework, multitasking, notifications, widgets, content providers, and permission system."
+        },
+        {
+          "id": 2,
+          "question": "Explain the Android application structure.",
+          "answer": "Android app consists of: Activities (UI screens), Services (background tasks), Content Providers (data sharing), Broadcast Receivers (system events). Manifest file defines app configuration. Resources include layouts, strings, drawables."
+        },
+        {
+          "id": 3,
+          "question": "What is an Activity in Android?",
+          "answer": "Activity represents a single screen with user interface. Each Activity is a separate class extending AppCompatActivity. App typically has multiple Activities. Transition between Activities using Intent. Activity has lifecycle methods: onCreate, onStart, onResume, onPause, onStop, onDestroy."
+        },
+        {
+          "id": 4,
+          "question": "What is an Intent in Android?",
+          "answer": "Intent is a messaging object used to request action from another component. Types: Explicit (specify target component) and Implicit (specify action). Used to start Activities, Services, and broadcast messages. Contains action, data, extras."
+        },
+        {
+          "id": 5,
+          "question": "What are Fragments in Android?",
+          "answer": "Fragment is a reusable piece of UI that can be embedded in Activities. Represents behavior or portion of UI. Can be added/removed dynamically. Has its own lifecycle. Used to build flexible UI for different screen sizes."
+        },
+        {
+          "id": 6,
+          "question": "What is the Android manifest file?",
+          "answer": "AndroidManifest.xml describes app structure and configuration. Declares Activities, Services, Receivers. Specifies permissions required by app. Defines app icon, label, theme. Entry point defined by intent-filter. Required for every Android app."
+        },
+        {
+          "id": 7,
+          "question": "What is a Service in Android?",
+          "answer": "Service is a component that runs long-running operations in background without UI. Types: Started Service (runs until explicitly stopped), Bound Service (client-server interface). Runs on main thread by default. Can play music, download files, or perform computations."
+        },
+        {
+          "id": 8,
+          "question": "What is the difference between Activity and Service?",
+          "answer": "Activity: has UI, visible to user, user interacts with it. Service: no UI, runs in background, long-running operations. Activity lifecycle is shorter than Service. Activity pauses when user leaves, Service continues running."
+        },
+        {
+          "id": 9,
+          "question": "What are Content Providers in Android?",
+          "answer": "Content Providers manage shared data repositories. Provide uniform interface to access data. Can share data between apps. Built-in providers: ContactsContract, MediaStore, CalendarContract. Identified by URI like content://authority/path."
+        },
+        {
+          "id": 10,
+          "question": "What is the Activity lifecycle in Android?",
+          "answer": "onCreate: called when Activity is first created. onStart: when Activity becomes visible. onResume: when Activity comes to foreground and becomes interactive. onPause: when another Activity comes to foreground. onStop: when Activity is no longer visible. onDestroy: when Activity is destroyed."
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Python and what are its main features?",
+          "answer": "Python is a high-level, interpreted, dynamically-typed programming language. Features: Simple and readable syntax, versatile (web, data science, automation), large standard library, object-oriented and functional programming support, cross-platform, and open-source."
+        },
+        {
+          "id": 2,
+          "question": "Explain the difference between lists and tuples in Python.",
+          "answer": "Lists are mutable (can be modified after creation) and use square brackets []. Tuples are immutable (cannot be modified) and use parentheses (). Lists are slower but flexible. Tuples are faster and used for constant data. Both are sequences and support indexing."
+        },
+        {
+          "id": 3,
+          "question": "What are decorators in Python?",
+          "answer": "Decorators are functions that modify behavior of another function or class without permanently changing it. Uses @ symbol. Called before the decorated function. Used for logging, authentication, validation, and timing. Accept function as argument and return modified function."
+        },
+        {
+          "id": 4,
+          "question": "Explain list comprehension in Python.",
+          "answer": "List comprehension provides concise way to create lists. Syntax: [expression for item in iterable]. Can include conditions: [expression for item in iterable if condition]. Creates new list without modifying original. More efficient than using loops."
+        },
+        {
+          "id": 5,
+          "question": "What is the difference between *args and **kwargs?",
+          "answer": "*args allows function to accept variable number of non-keyword arguments as tuple. **kwargs allows function to accept variable number of keyword arguments as dictionary. *args comes before **kwargs in function definition."
+        },
+        {
+          "id": 6,
+          "question": "Explain generators in Python.",
+          "answer": "Generators are functions that return values one at a time using yield keyword. Create iterator protocol automatically. Memory efficient for large datasets. Use 'next()' to get next value. Can pause and resume execution state."
+        },
+        {
+          "id": 7,
+          "question": "What is the Global Interpreter Lock (GIL)?",
+          "answer": "GIL is a mutex that protects access to objects in CPython. Allows only one thread to execute Python code at a time. Prevents race conditions and memory corruption. Doesn't affect multiprocessing. Can be limiting for CPU-bound multithreaded programs."
+        },
+        {
+          "id": 8,
+          "question": "Explain inheritance in Python.",
+          "answer": "Inheritance allows class to inherit properties from another class. Uses class Child(Parent) syntax. Child class is derived/subclass, Parent is base/superclass. Supports single, multiple, and multi-level inheritance. Use super() to access parent class methods."
+        },
+        {
+          "id": 9,
+          "question": "What are lambda functions in Python?",
+          "answer": "Lambda functions are small anonymous functions defined with lambda keyword. Syntax: lambda arguments: expression. Limited to single expression. Used with map(), filter(), sort(). Useful for short-term, simple operations."
+        },
+        {
+          "id": 10,
+          "question": "Explain exception handling in Python.",
+          "answer": "Exception handling uses try-except-else-finally blocks. Try block contains code that might raise exception. Except block catches and handles specific exceptions. Else block runs if no exception occurs. Finally block always executes for cleanup."
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is SQL and what are its main components?",
+          "answer": "SQL (Structured Query Language) is used to manage and manipulate databases. Main components: DDL (CREATE, ALTER, DROP), DML (INSERT, UPDATE, DELETE, SELECT), DCL (GRANT, REVOKE), TCL (COMMIT, ROLLBACK). Used for querying, updating, and maintaining data."
+        },
+        {
+          "id": 2,
+          "question": "Explain the difference between PRIMARY KEY and UNIQUE constraint.",
+          "answer": "PRIMARY KEY: uniquely identifies each record, cannot be NULL, only one per table. UNIQUE: ensures all values are unique but can have multiple per table, allows one NULL value. PRIMARY KEY is subset of UNIQUE. Both enforce uniqueness."
+        },
+        {
+          "id": 3,
+          "question": "What are JOINs in SQL and explain their types?",
+          "answer": "JOINs combine records from multiple tables. INNER JOIN: returns records that exist in both tables. LEFT JOIN: returns all records from left table and matching from right. RIGHT JOIN: returns all from right and matching from left. FULL JOIN: returns all records from both."
+        },
+        {
+          "id": 4,
+          "question": "Explain normalization in databases.",
+          "answer": "Normalization organizes data to reduce redundancy and improve data integrity. 1NF: eliminate duplicate columns. 2NF: remove partial dependencies. 3NF: remove transitive dependencies. BCNF: every determinant is candidate key. Higher levels reduce anomalies and improve efficiency."
+        },
+        {
+          "id": 5,
+          "question": "What is the difference between INNER JOIN and CROSS JOIN?",
+          "answer": "INNER JOIN: returns rows with matching values in both tables based on condition. CROSS JOIN: returns Cartesian product (all combinations) of rows from both tables. INNER JOIN requires join condition, CROSS JOIN doesn't."
+        },
+        {
+          "id": 6,
+          "question": "Explain indexes in SQL and their importance.",
+          "answer": "Indexes create quick lookup mechanism for data retrieval. PRIMARY KEY and UNIQUE constraints create automatic indexes. Speed up SELECT queries and WHERE clauses. Can slow down INSERT, UPDATE, DELETE operations. Consume additional disk space. Use judiciously on frequently queried columns."
+        },
+        {
+          "id": 7,
+          "question": "What is the difference between WHERE and HAVING clause?",
+          "answer": "WHERE: filters records before grouping, works on individual rows, cannot use aggregate functions. HAVING: filters groups after GROUP BY, works on grouped data, can use aggregate functions like SUM(), COUNT(). Both are used in filtering but at different stages."
+        },
+        {
+          "id": 8,
+          "question": "Explain subqueries and their types.",
+          "answer": "Subqueries are queries within queries. Scalar subquery returns single value. Row subquery returns single row. Table subquery returns multiple rows/columns. Correlated subquery references outer query. Can be used in SELECT, FROM, WHERE, HAVING clauses."
+        },
+        {
+          "id": 9,
+          "question": "What are transactions in SQL?",
+          "answer": "Transactions ensure data consistency with ACID properties (Atomicity, Consistency, Isolation, Durability). Start with BEGIN/START TRANSACTION. Use COMMIT to save changes or ROLLBACK to undo. Prevent partial updates. Important for data integrity in multi-user environments."
+        },
+        {
+          "id": 10,
+          "question": "Explain the difference between DELETE and TRUNCATE.",
+          "answer": "DELETE: removes rows based on WHERE condition, can be rolled back (if in transaction), slower, triggers fire, uses more log space. TRUNCATE: removes all rows, faster, cannot use WHERE clause, not rolled back in some databases, doesn't fire triggers, deallocates data page."
+        }
+      ]
+    }
+  ]
+}]
