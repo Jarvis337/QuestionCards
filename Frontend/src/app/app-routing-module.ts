@@ -1,39 +1,3 @@
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-
-// const routes: Routes = [];
-
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
-// export class AppRoutingModule { }
-
-
-
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
-// import { QuestionComponent } from './components/question.component/question.component'; // Import the component
-
-// const routes: Routes = [
-//     { 
-//       path: '', 
-//       component: QuestionComponent, 
-//       title: 'Interview Questions' 
-//     },
-//     // You can add more routes here if needed
-//     { 
-//       path: '**', 
-//       redirectTo: '' // Redirects any unmatched path back to the home route
-//     }
-// ];
-
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
-// export class AppRoutingModule { }
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
